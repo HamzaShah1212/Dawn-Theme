@@ -7,6 +7,6 @@
             "type": "example-404"
         }
     },
-    "order": ["template_404"]
+    "order": ["template-404"]
 
 }
