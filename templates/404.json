@@ -14,5 +14,7 @@
             "type": "example404"
         }
     },
-    "order": ["template_404"]
+    "order": [
+        "template_404"
+    ]
 }
