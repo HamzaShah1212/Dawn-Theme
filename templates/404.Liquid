@@ -1,6 +1,12 @@
-{% layout 'custom_theme' %} <!-- Reference the custom layout, replace 'custom_theme' with your layout name. -->
+{% layout 'custom_theme' %}
 
 <div id="404_temeplate" class="custom-class" custom-attrubute="hellow">
-  <!-- Including the section defined in the JSON -->
-  {% section 'example-404' %}
+  <h1>{{ 'general.404.title' | t }}</h1>
+  <p>{{ 'general.404.subtext_html' | t }}</p>
+
+  <!-- Optional: Search Form -->
+  <form action="/search" method="get">
+    <input type="search" name="q" placeholder="Search..." aria-label="Search">
+    <button type="submit">Search</button>
+  </form>
 </div>
