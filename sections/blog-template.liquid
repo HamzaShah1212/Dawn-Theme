@@ -1,0 +1,16 @@
+{% assign blog = blogs['news'] %}
+{% if blog.articles.size > 0 %}
+  <h2>Latest Blog Posts</h2>
+  <ul>
+    {% for article in blog.articles %}
+      <li>
+        <a href="{{ article.url }}">
+          <h3>{{ article.title }}</h3>
+        </a>
+        <p>{{ article.excerpt }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>No blog posts available at the moment.</p>
+{% endif %}
